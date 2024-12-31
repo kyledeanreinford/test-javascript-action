@@ -1,5 +1,5 @@
-import github from "@actions/github";
-import core from "@actions/core";
+const core = require('@actions/core');
+const github = require('@actions/github');
 
 try {
     const nameToGreet = core.getInput('who-to-greet')
